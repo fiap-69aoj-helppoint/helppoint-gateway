@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: netflix-gateway
+  profiles:
+    active:
+      dev
+server:
+  port: 8091
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    user:
+      path: /product/**
+      serviceId: HELPPOINT-PRODUCT
