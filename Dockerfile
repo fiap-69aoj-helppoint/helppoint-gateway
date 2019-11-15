@@ -5,6 +5,6 @@ LABEL source="https://github.com/fiap-69aoj/helppoint-gateway" \
 
 ADD ./target/gateway-0.0.1-SNAPSHOT.jar gateway.jar
 
-EXPOSE 8091
+EXPOSE 9090
 
 ENTRYPOINT ["java","-jar", "-Dspring.profiles.active=prod", "/gateway.jar"]
