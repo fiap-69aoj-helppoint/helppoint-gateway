@@ -1,6 +1,7 @@
 spring:
   zipkin:
     baseUrl: http://helppoint_zipkin:9411/
+
 eureka:
   client:
     serviceUrl:
