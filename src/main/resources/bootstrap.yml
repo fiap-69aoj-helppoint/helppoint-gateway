@@ -1,6 +1,6 @@
 spring:
   application:
-    name: netflix-gateway
+    name: helpoint-gateway
   profiles:
     active:
       dev
