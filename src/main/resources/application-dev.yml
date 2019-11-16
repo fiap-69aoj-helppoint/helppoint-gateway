@@ -2,6 +2,10 @@ spring:
   zipkin:
     baseUrl: http://localhost:9411/
 eureka:
+  instance:
+    preferIpAddress: true
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:9091/eureka/
+      defaultZone: http://localhost:8761/eureka/

@@ -1,8 +1,12 @@
 spring:
   zipkin:
-    baseUrl: http://helppoint_zipkin:9411/
+    baseUrl: http://helppoint-zipkin:9411/
 
 eureka:
+  instance:
+    preferIpAddress: true
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://helppoint_discovery_server:9091/eureka/
+      defaultZone: http://helppoint-discovery-server:8761/eureka/
