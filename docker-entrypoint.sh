@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo 'Sleeping 20s...'
+echo 'Sleeping 40s...'
 sleep 40
 
 echo 'Starting...'
