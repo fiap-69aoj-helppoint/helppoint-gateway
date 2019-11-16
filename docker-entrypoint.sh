@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo 'Sleeping 20s...'
-sleep 15
+sleep 40
 
 echo 'Starting...'
 java -jar -Dspring.profiles.active=prod /gateway.jar
