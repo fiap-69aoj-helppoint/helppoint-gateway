@@ -9,6 +9,12 @@ server:
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
   routes:
-    user:
+    product:
       path: /product/**
       serviceId: HELPPOINT-PRODUCT
+    client:
+      path: /client/**
+      serviceId: HELPPOINT-CLIENT
+    salesman:
+      path: /salesman/**
+      serviceId: HELPPOINT-SALESMAN
